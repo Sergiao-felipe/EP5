@@ -30,6 +30,9 @@ aside{
 main{
     grid-area: bg;
 }
+main img{
+    border-radius: 10px;
+}
 footer{
     grid-area: pe;
 }
@@ -40,7 +43,7 @@ footer{
     width: 1200px;
     padding: 20px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; 
 }
 .card{
     border-radius: 10px;
@@ -113,3 +116,4 @@ footer{
 .nav_mobile input[type="checkbox"]:checked ~ nav{
     transform: translateX(350px);
 }
+
