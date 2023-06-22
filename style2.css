@@ -13,13 +13,29 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #000000;
 }
 header{
     grid-area: cb;
+    position: relative;
+    padding: 10px,
+
+}
+header img{
+    align-items: left;
+}
+aside{
+    grid-area: bc;
+}
+main{
+    grid-area: bg;
+}
+footer{
+    grid-area: pe;
 }
 .elemento_pai{
 /*     border: 2px red solid;
- */    display: flex;
+ */ display: flex;
     justify-content: center;
     width: 1200px;
     padding: 20px;
@@ -60,4 +76,40 @@ header{
 .texto a:hover{
     background-color: #00a300;
 }
- 
+
+.nav_mobile ul{
+    list-style: none;
+    border: 2px black;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+.nav_mobile img{
+    width: 40px;
+}
+.nav_mobile input[type="checkbox"]{
+    display: none;
+}
+.nav_mobile nav{
+    width: 350px ;
+    height:100vh ;
+    position:absolute ;
+    left: -350px; ;
+    transition: all 0.3s;
+    background-color: gray;
+}
+.nav_mobile a{
+    border: #00a300;
+    display: block;
+    padding: 20px 5px ;
+}
+.nav_mobile label{
+    border: red;
+    position: absolute;
+    padding: 15px;
+    z-index: 1;
+}
+.nav_mobile input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
