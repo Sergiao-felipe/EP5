@@ -166,3 +166,7 @@ header img{
     text-decoration: none;
     transition: 0.5s;
 }
+
+li{
+    display: inline;
+}
