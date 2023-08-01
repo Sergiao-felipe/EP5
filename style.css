@@ -1,6 +1,6 @@
 header{
     grid-area: cabe;
-    background-color: #000000;
+    background-color: #302d2d;
 }
 
 header img{
@@ -8,11 +8,15 @@ header img{
 }
 aside{
     grid-area: brac;
-    background-color: #ffffff;
+    background-color: #000000;
+    align-items: center;
+    text-align: center;
+    color: #f4f4fc;
 }
 main{
     grid-area: prin;
-    background-color: #f4f4fc;
+    background-color: #000000;
+    color: goldenrod;
 }
 footer{
     grid-area: roda;
@@ -114,12 +118,12 @@ header img{
     border-radius: 20px;
 }
 .card:hover{
-    background-color: #f4f4fc;
-    color: rgb(0, 0, 0);
+    background-color: #272729;
+    color: goldenrod;
     bottom: unset;
 }
 .card:hover a{
-    background-color: #000000;
+    background-color: #ffbb00;
     color: rgb(255, 255, 255);
 }
 
@@ -143,10 +147,11 @@ header img{
     justify-content: center;
     align-items: center;
     transition: 2s;
+    background-color: goldenrod;
 }
 
 .search-txt{
-    background-color: #000000;
+    background-color: #00ee3b;
     color: #000000;
     border: none;
     background: none;
@@ -160,7 +165,7 @@ header img{
 .texto a{
     display: block;
     padding: 10px 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 20px;
     text-decoration: none;
@@ -189,8 +194,8 @@ label{
 
 input, select, textarea, button{
     border-radius: 5px;
-    color: #b31415;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    color: #000000;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
 }
 .letra_normal input{
     box-shadow: none;
@@ -198,4 +203,8 @@ input, select, textarea, button{
 
 fieldset{
     border: 0;
+}
+
+aside h3{
+    text-align: center;
 }
